@@ -8,17 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		DD0F85F327729D4F00828F12 /* TakeHomeTaskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0F85F227729D4F00828F12 /* TakeHomeTaskApp.swift */; };
-		DD0F85F527729D4F00828F12 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0F85F427729D4F00828F12 /* ContentView.swift */; };
+		DD0F85F527729D4F00828F12 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0F85F427729D4F00828F12 /* MapView.swift */; };
 		DD0F85F727729D4F00828F12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD0F85F627729D4F00828F12 /* Assets.xcassets */; };
 		DD0F85FA27729D4F00828F12 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD0F85F927729D4F00828F12 /* Preview Assets.xcassets */; };
+		DD0F86012772BDFC00828F12 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0F86002772BDFC00828F12 /* MapViewModel.swift */; };
+		DDE62E28277A6EA100CA884B /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE62E27277A6EA100CA884B /* ErrorView.swift */; };
+		DDF05B832777999E00DD2E4D /* FeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF05B822777999E00DD2E4D /* FeedModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DD0F85EF27729D4F00828F12 /* TakeHomeTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakeHomeTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD0F85F227729D4F00828F12 /* TakeHomeTaskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeHomeTaskApp.swift; sourceTree = "<group>"; };
-		DD0F85F427729D4F00828F12 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DD0F85F427729D4F00828F12 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		DD0F85F627729D4F00828F12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD0F85F927729D4F00828F12 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DD0F86002772BDFC00828F12 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		DDE62E27277A6EA100CA884B /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		DDF05B822777999E00DD2E4D /* FeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +58,10 @@
 			isa = PBXGroup;
 			children = (
 				DD0F85F227729D4F00828F12 /* TakeHomeTaskApp.swift */,
-				DD0F85F427729D4F00828F12 /* ContentView.swift */,
+				DD0F85F427729D4F00828F12 /* MapView.swift */,
+				DD0F86002772BDFC00828F12 /* MapViewModel.swift */,
+				DDE62E27277A6EA100CA884B /* ErrorView.swift */,
+				DDF05B822777999E00DD2E4D /* FeedModel.swift */,
 				DD0F85F627729D4F00828F12 /* Assets.xcassets */,
 				DD0F85F827729D4F00828F12 /* Preview Content */,
 			);
@@ -137,8 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD0F85F527729D4F00828F12 /* ContentView.swift in Sources */,
+				DDE62E28277A6EA100CA884B /* ErrorView.swift in Sources */,
+				DD0F85F527729D4F00828F12 /* MapView.swift in Sources */,
 				DD0F85F327729D4F00828F12 /* TakeHomeTaskApp.swift in Sources */,
+				DD0F86012772BDFC00828F12 /* MapViewModel.swift in Sources */,
+				DDF05B832777999E00DD2E4D /* FeedModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +284,7 @@
 				DEVELOPMENT_TEAM = 7VMSA5VDUW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs your location to show it on the map.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -301,6 +314,7 @@
 				DEVELOPMENT_TEAM = 7VMSA5VDUW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs your location to show it on the map.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

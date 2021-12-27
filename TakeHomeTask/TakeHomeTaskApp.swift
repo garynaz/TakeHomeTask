@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct TakeHomeTaskApp: App {
+    
+    @StateObject private var viewModel = MapViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MapView()
+                .environmentObject(viewModel)
         }
     }
 }
