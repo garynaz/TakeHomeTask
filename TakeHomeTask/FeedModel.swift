@@ -19,7 +19,7 @@ struct Items: Codable{
 struct FeedElements: Codable{
     var title: String
     var ctype: String
-    var data: MetaData
+    var data: Polyline
     var location: Location
 }
 
@@ -28,19 +28,8 @@ struct Location: Codable{
     var lng: Double
 }
 
-struct MetaData: Codable{
-    var origin: PolyOrigin?
-    var destination: PolyDesination?
-}
-
-struct PolyOrigin: Codable{
-    var lat: Double
-    var lng: Double
-}
-
-struct PolyDesination: Codable{
-    var lat: Double
-    var lng: Double
+struct Polyline: Codable{
+    var polyline: String
 }
 
 struct Poi: Identifiable{

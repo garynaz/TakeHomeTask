@@ -24,7 +24,7 @@ class MapViewModel: NSObject, ObservableObject, CLLocationManagerDelegate{
                                                span: MapDetails.defaultSpan)
     @Published var locationToggle: Bool = false
     @Published var feedElements: [FeedElements] = []
-    @Published var polyline: [PolyOrigin] = []
+    @Published var polyline: [Polyline] = []
     @Published var locations: [Poi] = []
     @Published var showPoiTitle: Bool = false
     
