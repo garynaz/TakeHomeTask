@@ -7,24 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		68AFFD24CEC615E5F503509F /* Pods_TakeHomeTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 130CB8F7B71549937AC845FC /* Pods_TakeHomeTask.framework */; };
 		DD0F85F327729D4F00828F12 /* TakeHomeTaskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0F85F227729D4F00828F12 /* TakeHomeTaskApp.swift */; };
-		DD0F85F527729D4F00828F12 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0F85F427729D4F00828F12 /* MapView.swift */; };
 		DD0F85F727729D4F00828F12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD0F85F627729D4F00828F12 /* Assets.xcassets */; };
 		DD0F85FA27729D4F00828F12 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD0F85F927729D4F00828F12 /* Preview Assets.xcassets */; };
 		DD0F86012772BDFC00828F12 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0F86002772BDFC00828F12 /* MapViewModel.swift */; };
 		DDE62E28277A6EA100CA884B /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE62E27277A6EA100CA884B /* ErrorView.swift */; };
 		DDF05B832777999E00DD2E4D /* FeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF05B822777999E00DD2E4D /* FeedModel.swift */; };
+		DDF919E7277B75CD006E72DF /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF919E6277B75CD006E72DF /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		130CB8F7B71549937AC845FC /* Pods_TakeHomeTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TakeHomeTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24EFB973809826948BDA5042 /* Pods-TakeHomeTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeHomeTask.release.xcconfig"; path = "Target Support Files/Pods-TakeHomeTask/Pods-TakeHomeTask.release.xcconfig"; sourceTree = "<group>"; };
+		7F893C0BA38C9C66A9A0D02F /* Pods-TakeHomeTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeHomeTask.debug.xcconfig"; path = "Target Support Files/Pods-TakeHomeTask/Pods-TakeHomeTask.debug.xcconfig"; sourceTree = "<group>"; };
 		DD0F85EF27729D4F00828F12 /* TakeHomeTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakeHomeTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD0F85F227729D4F00828F12 /* TakeHomeTaskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeHomeTaskApp.swift; sourceTree = "<group>"; };
-		DD0F85F427729D4F00828F12 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		DD0F85F627729D4F00828F12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD0F85F927729D4F00828F12 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DD0F86002772BDFC00828F12 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		DDE62E27277A6EA100CA884B /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		DDF05B822777999E00DD2E4D /* FeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedModel.swift; sourceTree = "<group>"; };
+		DDF919E6277B75CD006E72DF /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,17 +36,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68AFFD24CEC615E5F503509F /* Pods_TakeHomeTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3083BE5948280659D422BDFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				130CB8F7B71549937AC845FC /* Pods_TakeHomeTask.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9E323E5A2DED6BB4A1CDEAD2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7F893C0BA38C9C66A9A0D02F /* Pods-TakeHomeTask.debug.xcconfig */,
+				24EFB973809826948BDA5042 /* Pods-TakeHomeTask.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		DD0F85E627729D4F00828F12 = {
 			isa = PBXGroup;
 			children = (
 				DD0F85F127729D4F00828F12 /* TakeHomeTask */,
 				DD0F85F027729D4F00828F12 /* Products */,
+				9E323E5A2DED6BB4A1CDEAD2 /* Pods */,
+				3083BE5948280659D422BDFA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,8 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				DD0F85F227729D4F00828F12 /* TakeHomeTaskApp.swift */,
-				DD0F85F427729D4F00828F12 /* MapView.swift */,
 				DD0F86002772BDFC00828F12 /* MapViewModel.swift */,
+				DDF919E6277B75CD006E72DF /* MapView.swift */,
 				DDE62E27277A6EA100CA884B /* ErrorView.swift */,
 				DDF05B822777999E00DD2E4D /* FeedModel.swift */,
 				DD0F85F627729D4F00828F12 /* Assets.xcassets */,
@@ -83,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD0F85FD27729D4F00828F12 /* Build configuration list for PBXNativeTarget "TakeHomeTask" */;
 			buildPhases = (
+				D17A59548C30B5E902A73C63 /* [CP] Check Pods Manifest.lock */,
 				DD0F85EB27729D4F00828F12 /* Sources */,
 				DD0F85EC27729D4F00828F12 /* Frameworks */,
 				DD0F85ED27729D4F00828F12 /* Resources */,
+				024822961040DD6585A08445 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -141,16 +167,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		024822961040DD6585A08445 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TakeHomeTask/Pods-TakeHomeTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TakeHomeTask/Pods-TakeHomeTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TakeHomeTask/Pods-TakeHomeTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D17A59548C30B5E902A73C63 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TakeHomeTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DD0F85EB27729D4F00828F12 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				DDE62E28277A6EA100CA884B /* ErrorView.swift in Sources */,
-				DD0F85F527729D4F00828F12 /* MapView.swift in Sources */,
 				DD0F85F327729D4F00828F12 /* TakeHomeTaskApp.swift in Sources */,
 				DD0F86012772BDFC00828F12 /* MapViewModel.swift in Sources */,
 				DDF05B832777999E00DD2E4D /* FeedModel.swift in Sources */,
+				DDF919E7277B75CD006E72DF /* MapView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +343,7 @@
 		};
 		DD0F85FE27729D4F00828F12 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F893C0BA38C9C66A9A0D02F /* Pods-TakeHomeTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -305,6 +374,7 @@
 		};
 		DD0F85FF27729D4F00828F12 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24EFB973809826948BDA5042 /* Pods-TakeHomeTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

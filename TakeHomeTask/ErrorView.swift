@@ -8,16 +8,16 @@
 import Foundation
 import SwiftUI
 
-struct ErrorView: View{
+struct ErrorView: View {
     @EnvironmentObject var viewModel: MapViewModel
     
     @State var color = Color.black.opacity(0.7)
     var alert: Bool?
     var error: String?
     
-    var body : some View{
-        VStack{
-            HStack{
+    var body : some View {
+        VStack {
+            HStack {
                 Text("Error")
                     .font(.title)
                     .fontWeight(.bold)
@@ -32,9 +32,9 @@ struct ErrorView: View{
                 .padding(.top)
                 .padding(.horizontal, 25)
             
-            Button{
+            Button {
                 viewModel.alert.toggle()
-            } label:{
+            } label: {
                 Text("Cancel")
                     .foregroundColor(color)
                     .padding(.vertical)

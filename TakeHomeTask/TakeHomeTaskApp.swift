@@ -14,7 +14,7 @@ struct TakeHomeTaskApp: App {
     
     var body: some Scene {
         WindowGroup {
-            MapView()
+            ContentView()
                 .environmentObject(viewModel)
         }
     }
