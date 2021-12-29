@@ -81,11 +81,11 @@
 		DD0F85F127729D4F00828F12 /* TakeHomeTask */ = {
 			isa = PBXGroup;
 			children = (
-				DD0F85F227729D4F00828F12 /* TakeHomeTaskApp.swift */,
-				DD0F86002772BDFC00828F12 /* MapViewModel.swift */,
-				DDF919E6277B75CD006E72DF /* MapView.swift */,
 				DDE62E27277A6EA100CA884B /* ErrorView.swift */,
+				DD0F85F227729D4F00828F12 /* TakeHomeTaskApp.swift */,
 				DDF05B822777999E00DD2E4D /* FeedModel.swift */,
+				DDF919E6277B75CD006E72DF /* MapView.swift */,
+				DD0F86002772BDFC00828F12 /* MapViewModel.swift */,
 				DD0F85F627729D4F00828F12 /* Assets.xcassets */,
 				DD0F85F827729D4F00828F12 /* Preview Content */,
 			);

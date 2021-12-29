@@ -27,7 +27,6 @@ class MapViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
     @Published var lineCoordinates: [[CLLocationCoordinate2D]] = []
     @Published var locations: [Poi] = []
     @Published var locationToggle: Bool = false
-    @Published var showPoiTitle: Bool = false
     
     var cancellables = Set<AnyCancellable>()
     var locationManager: CLLocationManager?
@@ -78,10 +77,8 @@ class MapViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
         }
 
         if locationToggle == true {
-            print("Toggle is True")
             self.region = MKCoordinateRegion(center: MapDetails.altLocation, span: MKCoordinateSpan(latitudeDelta: 5, longitudeDelta: 5))
         } else {
-            print("Toggle is False")
             self.region = MKCoordinateRegion(center: latestLocation.coordinate, span: MKCoordinateSpan(latitudeDelta: 5, longitudeDelta: 5))
             getPosts()
         }
