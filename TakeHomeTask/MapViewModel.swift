@@ -72,7 +72,6 @@ class MapViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
 
         guard let latestLocation = locations.first else {
-            //Show error if need be.
             self.error = "Unable to retrieve your location..."
             self.alert.toggle()
             return

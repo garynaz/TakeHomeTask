@@ -63,12 +63,16 @@ class Coordinator: NSObject, MKMapViewDelegate {
     init(_ parent: MapView) {
         self.parent = parent
     }
-    
+        
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        
+        guard !(annotation is MKUserLocation) else { return nil }
+
+        
         let identifier = "Placemark"
         
         var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
-        
+                
         if annotationView == nil {
             annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
             annotationView?.canShowCallout = true
